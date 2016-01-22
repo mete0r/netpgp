@@ -1,0 +1,16 @@
+*.la
+*.lo
+*.o
+*.so
+.deps
+.libs
+Makefile
+config.h
+config.log
+config.status
+libtool
+src/netpgp/netpgp
+src/netpgpkeys/netpgpkeys
+stamp-h1
+tests/atconfig
+tests/atlocal

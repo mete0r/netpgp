@@ -16,6 +16,7 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AM_MAINTAINER_MODE
 
 AC_USE_SYSTEM_EXTENSIONS
+AM_PROG_AR
 
 AC_CANONICAL_HOST
 CANONICAL_HOST=$host
@@ -29,16 +30,6 @@ AC_PROG_CC
 AC_PROG_INSTALL
 LT_INIT
 AC_PROG_LN_S
-
-dnl based on AC_PROG_RANLIB from autoconf
-m4_ifndef([AC_PROG_AR],[dnl
-AN_MAKEVAR([AR], [AC_PROG_AR])
-AN_PROGRAM([ar], [AC_PROG_AR])
-AC_DEFUN([AC_PROG_AR],
-[AC_CHECK_TOOL(AR, ar, :)])
-])
-
-AC_PROG_AR
 
 # Compiler characteristics
 #

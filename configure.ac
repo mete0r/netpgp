@@ -3,7 +3,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_INIT([netpgp],[20140220],[Alistair Crooks <agc@netbsd.org> c0596823])
-AC_PREREQ(2.69)
+AC_PREREQ([2.69])
 AC_REVISION([$Revision: 1.42 $])
 
 AS_SHELL_SANITIZE
@@ -15,7 +15,7 @@ AC_CONFIG_HEADER([src/lib/config.h])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AM_MAINTAINER_MODE
 
-AC_GNU_SOURCE
+AC_USE_SYSTEM_EXTENSIONS
 
 AC_CANONICAL_HOST
 CANONICAL_HOST=$host
@@ -27,7 +27,7 @@ AC_PROG_MAKE_SET
 AC_PROG_AWK
 AC_PROG_CC
 AC_PROG_INSTALL
-AC_PROG_LIBTOOL
+LT_INIT
 AC_PROG_LN_S
 
 dnl based on AC_PROG_RANLIB from autoconf

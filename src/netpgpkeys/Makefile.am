@@ -6,7 +6,7 @@ bin_PROGRAMS		= netpgpkeys
 
 netpgpkeys_SOURCES	= netpgpkeys.c
 
-netpgpkeys_CPPFLAGS	= -I$(top_srcdir)/include -I../libmj
+netpgpkeys_CPPFLAGS	= -I$(top_srcdir)/include -I$(top_srcdir)/src/libmj
 
 netpgpkeys_LDADD	= ../lib/libnetpgp.la ../libmj/libmj.la
 

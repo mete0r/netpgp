@@ -4,7 +4,7 @@ AM_CFLAGS		= $(WARNCFLAGS)
 
 lib_LTLIBRARIES		= libnetpgp.la
 
-libnetpgp_la_CPPFLAGS	= -I$(top_srcdir)/include -I../libmj
+libnetpgp_la_CPPFLAGS	= -I$(top_srcdir)/include -I$(top_srcdir)/src/libmj
 
 libnetpgp_la_SOURCES	= \
 	bufgap.c \
